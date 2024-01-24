@@ -1,0 +1,31 @@
+section {
+  height: 800px;
+  background-color: lightcyan;
+  .container {
+    @include mycontainer;
+    @include myflex;
+    height: 500px;
+    border: 2px solid black;
+    .box1,
+    .box2,
+    .box3 {
+      @include card;
+    }
+    .box1 {
+      background: $mycolor;
+    }
+    .box2 {
+      background: $mycolor;
+    }
+    .box3 {
+      background: $mycolor;
+    }
+  }
+}
+.s-2 {
+  background-color: lightcoral;
+  height: 700px;
+  .container {
+    @include mycontainer;
+  }
+}
